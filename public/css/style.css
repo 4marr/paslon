@@ -619,10 +619,6 @@ video {
   z-index: 50;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1008,6 +1004,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1077,18 +1077,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-44 {
-  padding-bottom: 11rem;
-}
-
-.pb-56 {
-  padding-bottom: 14rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .text-left {
