@@ -41,8 +41,11 @@
                         <a href="#proker"
                             class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link">Proker
                         </a>
+                        <a href="#faq"
+                            class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link">FAQ
+                        </a>
                         <p>|</p>
-                        <a href="./public/profil/"
+                        <a href="./profil/"
                             class="h-8 rounded-full px-3 text-current flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/20 nav-link text-bold">Profil
                         </a>
                     </nav>
@@ -89,8 +92,11 @@
             <a href="#proker"
                 class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Proker
             </a>
+            <a href="#faq"
+                class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">FAQ
+            </a>
             <hr class="bg-white h-[1px] w-full">
-            <a href="./public/profil/"
+            <a href="./profil/"
                 class="flex items-center justify-center px-3 py-1 rounded-full text-current hover:bg-white/20 transition-colors duration-300 ease-in-out nav-link-drawer">Profil
             </a>
         </nav>
@@ -143,7 +149,7 @@
             <div class="relative min-h-screen w-full flex items-center justify-center">
                 <div class="relative w-full h-full flex items-center justify-center">
                     <div class=" mx-auto px-5 max-w-screen-xl">
-                        <p class="font-bold text-8xl animate">01<small class="text-xs">#OsisNextLevel</small></p>
+                        <p class="font-bold text-8xl animate">01<small class="text-xs">#satukanpilihanmu</small></p>
                         <p class="font-semibold text-5xl md:text-6xl animate">Satu pilihan, Satu tujuan. <br> We are the
                             only
                             <span class="text-yellow-400">one</span>.
@@ -159,7 +165,8 @@
             <div class="rounded-tl-[3rem] lg:rounded-tl-[4rem] h-full w-full flex items-center justify-center bg-white">
                 <div class="relative w-full h-full flex items-center justify-center p-4 pt-44 pb-14">
                     <div class="relative w-full h-full flex flex-col justify-center items-center">
-                        <p class="font-semibold text-center lg:text-lg mb-4 italic">"OSIS sebagai wadah aspirasi siswa seharusnya
+                        <p class="font-semibold text-center lg:text-lg mb-4 italic">"OSIS sebagai wadah aspirasi siswa
+                            seharusnya
                             menjadi rumah bagi setiap ide dan suara. Kami di sini untuk memastikan setiap siswa memiliki
                             kesempatan untuk berkontribusi dan melihat perubahan nyata."</p>
                         <p class="text-center">Dan kami di sini akan mendengarkanmu.</p>
@@ -287,40 +294,9 @@
                         <div class="">
                             <p class="text-4xl md:text-5xl mb-8 font-bold text-primary">Program Kerja</p>
                         </div>
-                        <div class="bg-gray-100 rounded-full flex p-0.5 gap-1 mx-4 proker-filter">
-                            <button onclick="setActiveButton2(this)" data-filter-two="*"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Tampilkan
-                                Semua</button>
-                            <button onclick="setActiveButton2(this)" data-filter-two=".pendek"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Jangka
-                                Pendek</button>
-                            <button onclick="setActiveButton2(this)" data-filter-two=".panjang"
-                                class="button-proker rounded-full p-4 bg-transparent group hover:bg-white font-semibold text-xs">Jangka
-                                Panjang</button>
-                            <script>
-                                function setActiveButton2(clickedButton) {
-                                    // Hapus kelas bg-blue-500 dari semua tombol
-                                    document.querySelectorAll('.button-proker').forEach(btn => {
-                                        btn.classList.remove('bg-white', 'text-primary');
-                                        btn.classList.add('bg-transparent', 'text-black');
-                                    });
-
-                                    // Tambahkan kelas bg-blue-500 ketombol yang diklik
-                                    clickedButton.classList.remove('bg-transparent', 'text-black');
-                                    clickedButton.classList.add('bg-white', 'text-primary');
-                                }
-
-                                // Set tombol pertama aktif saat halaman dimuat
-                                document.addEventListener('DOMContentLoaded', () => {
-                                    const firstButton = document.querySelector('.button-proker');
-                                    firstButton.classList.remove('bg-transparent', 'text-black');
-                                    firstButton.classList.add('bg-white', 'text-primary');
-                                });
-                            </script>
-                        </div>
-                        <div class="ftwo grid grid-cols-1 mt-8 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8 w-full">
                             <div
-                                class="slide-up relative flex flex-col justify-between bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full panjang proker my-2">
+                                class="slide-up relative flex flex-col justify-between bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full panjang proker m-2">
                                 <div class="">
                                     <p class="font-semibold mb-2 text-gray-800 text-xl">GeLi (Gerakan Literasi)</p>
                                     <p class="text-gray-600">Kegiatan pembiasaan membaca yang akan dilakuan setiap 2
@@ -333,7 +309,7 @@
                                 </div>
                             </div>
                             <div
-                                class="slide-up relative flex flex-col justify-between bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full panjang proker my-2">
+                                class="slide-up relative flex flex-col justify-between bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full panjang proker m-2">
                                 <p class="font-semibold mb-2 text-gray-800 text-xl">Ayo Tanam, Ayo Rawat</p>
                                 <p class="text-gray-600">Menghiijaukan ligkungan sekolah agar terlihat lebih sejuk dan
                                     indah, program ini juga mengajarkan kepada siswa agar bisa menanam, menjaga, dan
@@ -344,32 +320,30 @@
                                 </div>
                             </div>
                             <div
-                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full pendek proker my-2">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full pendek proker m-2">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Coming soon.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full pendek proker my-2">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
-                                    consectetur.</p>
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full pendek proker m-2">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Coming soon.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
                                     minima earum.</p>
                             </div>
                             <div
-                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full proker my-2">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit.</p>
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full proker m-2">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Coming soon.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Aliquam, quae
                                     dicta? Accusantium voluptatibus tenetur corrupti eligendi, suscipit veritatis!</p>
                             </div>
                             <div
-                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full proker my-2">
-                                <p class="font-semibold mb-2 text-gray-800 text-xl">Lorem ipsum dolor sit amet
-                                    consectetur.</p>
+                                class="slide-up relative bg-white p-6 hover:-translate-y-1 transition-all duration-500 rounded-lg border border-solid shadow-xl border-gray-200 w-full proker m-2">
+                                <p class="font-semibold mb-2 text-gray-800 text-xl">Coming soon.</p>
                                 <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     Laborum officia,
                                     delectus harum vitae eaque mollitia voluptatem molestias nemo, fuga repudiandae
@@ -381,10 +355,113 @@
                 </div>
             </div>
         </section>
+        <section id="faq" class="relative w-full  text-current">
+            <div class="h-full w-full flex items-center justify-center pb-36">
+                <div class="relative w-full h-full flex items-center justify-center pt-20">
+                    <div class="relative w-full h-full flex flex-col justify-center items-center p-4">
+                        <div class="">
+                            <p class="text-4xl md:text-5xl mb-8 font-bold text-primary text-center">Frequntly Ask Question</p>
+                        </div>
+                        <!-- Accordion Item 1 -->
+                        <div class="border-b border-slate-200 w-full">
+                            <button onclick="toggleAccordion(1)"
+                                class="w-full flex justify-between items-center py-5 text-slate-800">
+                                <span class="text-left">Siapa Calon Ketua dan Wakil Ketua osis Nomor urut 01?</span>
+                                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                        class="w-4 h-4">
+                                        <path fill-rule="evenodd"
+                                            d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-sm text-slate-500">
+                                    Ammar dan Nadia adalah calon ketua dan wakil ketua OSIS yang akan maju pada pemilihan tahun ini dengan masa bakti 2024-2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="border-b border-slate-200 w-full">
+                            <button onclick="toggleAccordion(2)"
+                                class="w-full flex justify-between items-center py-5 text-slate-800">
+                                <span>Kapan pemilihan calonnya?</span>
+                                <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                        class="w-4 h-4">
+                                        <path fill-rule="evenodd"
+                                            d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-sm text-slate-500">
+                                    Akan kami infokan setelah fix tanggalnya, stay tune..
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="border-b border-slate-200 w-full">
+                            <button onclick="toggleAccordion(3)"
+                                class="w-full flex justify-between items-center py-5 text-slate-800">
+                                <span>Siapa itu Ammar dan Nadia?</span>
+                                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                        class="w-4 h-4">
+                                        <path fill-rule="evenodd"
+                                            d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-sm text-slate-500">
+                                    Bisa di cek di bagian menu profil ya kak ')
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function toggleAccordion(index) {
+                                const content = document.getElementById(`content-${index}`);
+                                const icon = document.getElementById(`icon-${index}`);
+
+                                // SVG for Down icon
+                                const downSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+        </svg>
+      `;
+
+                                // SVG for Up icon
+                                const upSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+        </svg>
+      `;
+
+                                // Toggle the content's max-height for smooth opening and closing
+                                if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                                    content.style.maxHeight = '0';
+                                    icon.innerHTML = upSVG;
+                                } else {
+                                    content.style.maxHeight = content.scrollHeight + 'px';
+                                    icon.innerHTML = downSVG;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="bg-primary pt-12 pb-8">
             <div class="w-full">
                 <div class="px-2 sm:mx-4 text-center">
-                    <h1 class="text-3xl font-semibold text-white">Ammar - Nadia</h1>
+                    <h1 class="text-3xl font-semibold text-white">#satukanpilihanmu</h1>
                 </div>
                 <div class="px-2 sm:mx-4 grid grid-cols-1 gap-x-1.5 md:grid-cols-2 lg:grid-cols-4 mt-7 justify-center">
                     <div class="telp text-center grid">
@@ -470,18 +547,6 @@
         })
         $('.filter button').on("click", function () {
             var value = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: value
-            })
-        })
-
-        var $grid = $('.ftwo').isotope({
-            itemSelector: '.proker',
-            layoutMode: 'fitRows',
-        })
-        $('.proker-filter button').on("click", function () {
-            var value = $(this).attr('data-filter-two');
-            console.log(value)
             $grid.isotope({
                 filter: value
             })
