@@ -81,3 +81,12 @@ body{
     opacity: 1;
     transform: translateY(0)
 }
+
+.card-slide{
+    overflow-y: hidden;
+    scrollbar-color: transparent transparent;
+}
+
+.card-slide::-webkit-scrollbar {
+    display: none;
+}
