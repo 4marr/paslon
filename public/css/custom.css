@@ -83,7 +83,6 @@ body{
 }
 
 .card-slide{
-    overflow-y: hidden;
     scrollbar-color: transparent transparent;
 }
 
