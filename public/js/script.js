@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", animate)
 
 //counter visitor
 function countVisitors() {
-    fetch("https://counterpro.vercel.app/count/id/name_id")
+    fetch("https://counterpro.vercel.app/count/id/satukanpilihanmu")
     .then(response => response.json())
     .then(data => {
         document.getElementById("visitors").innerHTML = data.count;
